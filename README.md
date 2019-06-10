@@ -1,5 +1,5 @@
-## Ray_Tracer_Project
-CUDA Accelerated Ray Tracer for CS147 GPU Final Project
+# Ray_Tracer_Project
+##CUDA Accelerated Ray Tracer for CS147 GPU Final Project
 
 Device and CPU Specs:<br />
 MacBook Pro (15-inch, Mid 2015)<br />
