@@ -57,20 +57,20 @@ hitable *random_scene_gen() {
                     list[i++] = new sphere(center, 0.2, new matte(vec3(drand48()*drand48(), drand48()*drand48(), drand48()*drand48())));
                 }
                 else if (rand_mat < 0.95) { // metal
-                    //list[i++] = new sphere(center, 0.2, new metal(vec3(0.5*(1 + drand48()), 0.5*(1 + drand48()), 0.5*(1 + drand48())),  0.5*drand48()));
+                    list[i++] = new sphere(center, 0.2, new metal(vec3(0.5*(1 + drand48()), 0.5*(1 + drand48()), 0.5*(1 + drand48())),  0.5*drand48()));
                     
                 }
                 else {  // glass
-                    //list[i++] = new sphere(center, 0.2, new glass(1.5));
+                    list[i++] = new sphere(center, 0.2, new glass(1.5));
                 }
             }
         }
     }
-    list[i++] = new sphere(vec3(0, 1, 0), 1.0, new metal(vec3(0.7, 0.6, 0.5), 0.0));
+    //list[i++] = new sphere(vec3(0, 1, 0), 1.0, new metal(vec3(0.7, 0.6, 0.5), 0.0));
     
-    list[i++] = new sphere(vec3(4, 1, 0), 1.0, new glass(1.5));
-    //list[i++] = new sphere(vec3(-4, 1, 0), 1.0, new matte(vec3(0.4, 0.2, 0.1)));
-    //list[i++] = new sphere(vec3(4, 1, 0), 1.0, new metal(vec3(0.7, 0.6, 0.5), 0.0));
+    list[i++] = new sphere(vec3(0, 1, 0), 1.0, new glass(1.5));
+    list[i++] = new sphere(vec3(-4, 1, 0), 1.0, new matte(vec3(0.4, 0.2, 0.1)));
+    list[i++] = new sphere(vec3(4, 1, 0), 1.0, new metal(vec3(0.7, 0.6, 0.5), 0.0));
     
     return new hit_list(list,i);
 }
@@ -98,7 +98,7 @@ int main(){
         hitable *world = new hit_list(list,5);
         world = random_scene_gen();
         
-        vec3 lookfrom(12,2,3);
+        vec3 lookfrom(13,2,3);
         vec3 lookat(0,0,0);
         float dist_to_focus = 10.0;
         float aperture = 0.1;
