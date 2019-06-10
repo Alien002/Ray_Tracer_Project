@@ -2,13 +2,13 @@
 CUDA Accelerated Ray Tracer for CS147 GPU Final Project
 
 ## Hardware Specifications:
-Device and CPU Specifications:<br />
+### Device and CPU Specifications:
 MacBook Pro (15-inch, Mid 2015)<br />
 2.8 GHz Intel Core i7-4980HQ CPU<br />
 MacOS Mojave - Version 10.14.4<br />
 16 GB 1600 MHz DDR3<br />
 
-GPU Specifications:<br />
+### GPU Specifications:
 University of California, Riverside <br />
 Engineering Server Bender<br />
 
