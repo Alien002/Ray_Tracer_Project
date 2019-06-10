@@ -84,6 +84,9 @@ int main(){
         int pixel_x = 1440;      //Pixels on X
         int pixel_y = 900;       //Pixels on Y
         int precision = 10;      //Increase value to achieve higher precision
+        
+        cout <<"Rendering a " <<pixel_x <<" x " <<pixel_y <<" image with " <<precision <<" precision for samples per pixel." <<endl;
+        
         outfs << "P3\n" << pixel_x << " " << pixel_y << "\n255\n";        //sets X * Y dimentions of generated picture
         hitable *list[5];
         list[0] = new sphere(vec3(0,0,-1), 0.5, new matte(vec3(0.1, 0.2, 0.5)));

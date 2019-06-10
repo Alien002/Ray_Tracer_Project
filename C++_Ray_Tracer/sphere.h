@@ -35,7 +35,7 @@ bool sphere::hit(const ray& r, float t_min, float t_max, hit_data& rec) const {
         float temp = (-b - sqrt(D)) / a;
         if (temp < t_max && temp > t_min) {
             rec.t = temp;
-            rec.point = r.point(rec.t);
+            rec.point = r.point_at(rec.t);
             rec.normal = (rec.point - center) / radius;
             rec.mat_ptr = mat_ptr;
             return true;
@@ -43,7 +43,7 @@ bool sphere::hit(const ray& r, float t_min, float t_max, hit_data& rec) const {
         temp = (-b + sqrt(D)) / a;
         if (temp < t_max && temp > t_min) {
             rec.t = temp;
-            rec.point = r.point(rec.t);
+            rec.point = r.point_at(rec.t);
             rec.normal = (rec.point - center) / radius;
             rec.mat_ptr = mat_ptr;
             return true;

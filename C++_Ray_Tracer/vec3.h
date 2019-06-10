@@ -40,23 +40,23 @@ public:
 
 
 
-inline std::istream& operator >> (std::istream& in, vec3 & u)
+inline std::istream& operator >> (std::istream& infs, vec3 & u)
 {
     for(int i = 0; i < 3; i++)
     {
-        in >> u[i];
+        infs >> u.v[i];
     }
-    return in;
+    return infs;
 }
 
-inline std::ostream& operator << (std::ostream& out, const vec3 & u)
+inline std::ostream& operator << (std::ostream& outfs, const vec3 & u)
 {
     for(int i = 0; i < 3; i++)
     {
-        if(i) out <<" ";
-        out << u[i];
+        if(i) outfs <<" ";
+        outfs << u.v[i];
     }
-    return out;
+    return outfs;
 }
 
 inline void vec3::make_unit_vector() {
@@ -67,7 +67,7 @@ inline void vec3::make_unit_vector() {
 inline vec3 operator+(const vec3 &v1, const vec3 &v2) {
     vec3 r;
     for(int i = 0; i < 3; i++){
-        r[i] = v1.v[i] + v2.v[i];
+        r.v[i] = v1.v[i] + v2.v[i];
     }
     return r;
 }
@@ -75,7 +75,7 @@ inline vec3 operator+(const vec3 &v1, const vec3 &v2) {
 inline vec3 operator-(const vec3 &v1, const vec3 &v2) {
     vec3 r;
     for(int i = 0; i < 3; i++){
-        r[i] = v1.v[i] - v2.v[i];
+        r.v[i] = v1.v[i] - v2.v[i];
     }
     return r;
 }
@@ -83,7 +83,7 @@ inline vec3 operator-(const vec3 &v1, const vec3 &v2) {
 inline vec3 operator*(const vec3 &v1, const vec3 &v2) {
     vec3 r;
     for(int i = 0; i < 3; i++){
-        r[i] = v1.v[i] * v2.v[i];
+        r.v[i] = v1.v[i] * v2.v[i];
     }
     return r;
 }
@@ -91,7 +91,7 @@ inline vec3 operator*(const vec3 &v1, const vec3 &v2) {
 inline vec3 operator/(const vec3 &v1, const vec3 &v2) {
     vec3 r;
     for(int i = 0; i < 3; i++){
-        r[i] = v1.v[i] / v2.v[i];
+        r.v[i] = v1.v[i] / v2.v[i];
     }
     return r;
 }

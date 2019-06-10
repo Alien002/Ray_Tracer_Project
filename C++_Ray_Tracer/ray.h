@@ -20,7 +20,7 @@ public:
         :vec_endpoint(endpoint_input), vec_direction(direction_input)
     {}
 
-    vec3 point(float t) const
+    vec3 point_at(float t) const
     {
         return vec_endpoint+(vec_direction*t);
     }
