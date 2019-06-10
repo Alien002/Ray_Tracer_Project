@@ -98,7 +98,7 @@ int main(){
         hitable *world = new hit_list(list,5);
         world = random_scene_gen();
         
-        vec3 lookfrom(13,2,3);
+        vec3 lookfrom(14,2,4);
         vec3 lookat(0,0,0);
         float dist_to_focus = 10.0;
         float aperture = 0.1;
