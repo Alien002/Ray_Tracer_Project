@@ -1,0 +1,94 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		4033C04022ADCAFB003BD071 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4033C04122ADCC8F003BD071 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		4033C04222ADCC8F003BD071 /* ray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ray.h; sourceTree = "<group>"; };
+		4033C04322ADCC8F003BD071 /* sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		4033C04422ADCC8F003BD071 /* vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec3.h; sourceTree = "<group>"; };
+		4033C04522ADD7E1003BD071 /* hit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hit.h; sourceTree = "<group>"; };
+		4033C04622ADDB1A003BD071 /* hit_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hit_list.h; sourceTree = "<group>"; };
+		4033C04722ADE146003BD071 /* material.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		4033C04A22ADFD83003BD071 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4033C04B22AE387A003BD071 /* kernel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kernel.cpp; sourceTree = "<group>"; };
+		4033C04D22AE923C003BD071 /* main.cu */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.cu; sourceTree = "<group>"; };
+		4033C04E22AE923C003BD071 /* kernel.cu */ = {isa = PBXFileReference; lastKnownFileType = text; path = kernel.cu; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4033C03922ADCAE9003BD071 = {
+			isa = PBXGroup;
+			children = (
+				4033C04022ADCAFB003BD071 /* main.cpp */,
+				4033C04E22AE923C003BD071 /* kernel.cu */,
+				4033C04D22AE923C003BD071 /* main.cu */,
+				4033C04B22AE387A003BD071 /* kernel.cpp */,
+				4033C04322ADCC8F003BD071 /* sphere.h */,
+				4033C04122ADCC8F003BD071 /* camera.h */,
+				4033C04722ADE146003BD071 /* material.h */,
+				4033C04622ADDB1A003BD071 /* hit_list.h */,
+				4033C04522ADD7E1003BD071 /* hit.h */,
+				4033C04222ADCC8F003BD071 /* ray.h */,
+				4033C04422ADCC8F003BD071 /* vec3.h */,
+				4033C04A22ADFD83003BD071 /* Makefile */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		4033C03A22ADCAE9003BD071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4033C03D22ADCAE9003BD071 /* Build configuration list for PBXProject "CUDA_Ray_Tracer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4033C03922ADCAE9003BD071;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		4033C03E22ADCAE9003BD071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		4033C03F22ADCAE9003BD071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4033C03D22ADCAE9003BD071 /* Build configuration list for PBXProject "CUDA_Ray_Tracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4033C03E22ADCAE9003BD071 /* Debug */,
+				4033C03F22ADCAE9003BD071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4033C03A22ADCAE9003BD071 /* Project object */;
+}
