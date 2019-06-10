@@ -99,7 +99,7 @@ __global__ void create_world(hitable **d_list, hitable **d_world, camera **d_cam
         *rand_state = local_rand_state;
         *d_world  = new hit_list(d_list, 22*22+1+3);
         
-        vec3 lookfrom(12,2,3);
+        vec3 lookfrom(10,2,3);
         vec3 lookat(0,0,0);
         float dist_to_focus = 10.0; (lookfrom - lookat).length(); //???
         float aperture = 0.1;
