@@ -20,4 +20,4 @@ CUDA Version: 10.0<br />
 
 ## Program Statistics:
 C++ Ray Tracer @ 50 Precision - 264.807 seconds.<br />
-CUDA Ray Tracer @ 50 Precision - 43.96 seconds.<br />
+CUDA Ray Tracer @ 50 Precision - 40.94 seconds.<br />
