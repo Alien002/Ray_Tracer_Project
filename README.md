@@ -1,4 +1,4 @@
-# Ray_Tracer_Project
+# Ray Tracer Project
 CUDA Accelerated Ray Tracer for CS147 GPU Final Project
 
 ## Hardware Specifications:
