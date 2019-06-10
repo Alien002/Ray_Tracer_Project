@@ -51,6 +51,7 @@ class material  {
         virtual bool scatter(const ray& r_in, const hit_data& rec, vec3& attenuation, ray& scattered) const = 0;
 };
 
+// matte object with slight diffuse/reflection
 class matte : public material {
     public:
         vec3 diffuse;
@@ -66,6 +67,7 @@ class matte : public material {
 
 };
 
+// metal object with more reflection
 class metal : public material {
     public:
         float fuzz;
@@ -90,6 +92,7 @@ class metal : public material {
         }
 };
 
+// glass object with unique reflection, and refraction
 class glass : public material {
     public:
         float ref_idx;

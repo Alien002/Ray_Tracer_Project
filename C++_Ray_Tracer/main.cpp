@@ -83,11 +83,12 @@ int main(){
     if(outfs.is_open()){
         int pixel_x = 1440;      //Pixels on X
         int pixel_y = 900;       //Pixels on Y
-        int precision = 10;      //Increase value to achieve higher precision
+        int precision = 50;      //Increase value to achieve higher precision
         
         cout <<"Rendering a " <<pixel_x <<" x " <<pixel_y <<" image with " <<precision <<" precision for samples per pixel." <<endl;
         
-        outfs << "P3\n" << pixel_x << " " << pixel_y << "\n255\n";        //sets X * Y dimentions of generated picture
+        //sets X * Y dimentions of generated picture
+        outfs << "P3\n" << pixel_x << " " << pixel_y << "\n255\n";
         hitable *list[5];
         list[0] = new sphere(vec3(0,0,-1), 0.5, new matte(vec3(0.1, 0.2, 0.5)));
         list[1] = new sphere(vec3(0,-100.5,-1), 100, new matte(vec3(0.8, 0.8, 0.0)));
@@ -125,15 +126,18 @@ int main(){
         
         
     }
+    //close output ppm file
     outfs.close();
     
+    //end clock timer
     clock_t end = clock();
     
     double elapsed_time = double(end - begin) / CLOCKS_PER_SEC;
     
     cout<<"Total runtime: " <<elapsed_time <<" seconds." <<endl;
-    ifstream infs(filename, ios::binary | ios::ate);
     
+    //reopen file to see file size, then close
+    ifstream infs(filename, ios::binary | ios::ate);
     cout<<"File size: " <<double(infs.tellg()*0.000001) <<" MB" <<endl;
     infs.close();
     
