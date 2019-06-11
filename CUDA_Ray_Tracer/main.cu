@@ -31,13 +31,13 @@ int main(){
     
     
     // Open a ppm file to store image data
-    ofstream outfs ("CUDA_100_Image.ppm");
+    ofstream outfs ("CUDA_50_Image.ppm");
     if(outfs.is_open()){
         int pixel_x = 1440;      //Pixels on X
         int pixel_y = 900;       //Pixels on Y
-        int precision = 100;      //Increase value to achieve higher precision, sample per img
-        const unsigned int BLOCK_SIZE_X = 8;
-        const unsigned int BLOCK_SIZE_Y = 8;
+        int precision = 50;      //Increase value to achieve higher precision, sample per img
+        const unsigned int BLOCK_SIZE_X = 16;
+        const unsigned int BLOCK_SIZE_Y = 16;
         int total_pixels = pixel_x * pixel_y;
         size_t buffer_size = total_pixels * sizeof(vec3);
         
@@ -125,7 +125,7 @@ int main(){
     cout<<"Total runtime: " <<elapsed_time <<" seconds." <<endl;
     
     // Open file as binary to find size
-    ifstream infs("CUDA_100_Image.ppm", ios::binary | ios::ate);
+    ifstream infs("CUDA_50_Image.ppm", ios::binary | ios::ate);
     cout<<"File size: " <<double(infs.tellg()*0.000001) <<" MB" <<endl;
     infs.close();
     
