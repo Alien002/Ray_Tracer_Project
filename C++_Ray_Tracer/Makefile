@@ -1,6 +1,6 @@
 GCC = g++
 GCC_FLAGS = -std=c++11 -g -Wall -O3 -I/usr/include/libpng12
-EXE = ray_tracer
+EXE = Ray_Tracer
 OBJ = main.o
 
 default: $(EXE)
