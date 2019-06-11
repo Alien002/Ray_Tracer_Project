@@ -32,9 +32,11 @@ Precision | CPU Runtime (sec.) | GPU Runtime (sec.)
 
 ## Sample Image:
 
-#### CUDA Rendered @ 10 Precision
-![alt text](https://raw.githubusercontent.com/Alien002/Ray_Tracer_Project/master/Assets/CUDA_10_Image.png "CUDA_10_Image.png")
+#### CUDA Rendered @ 10 Precision (1440 x 900 px)
+![alt text](https://raw.githubusercontent.com/Alien002/Ray_Tracer_Project/master/Assets/CUDA_10_Image.png "CUDA_10_Image.png")<br />
+*Rendered image is grainy and not high quality.*
 <br />
 <br />
-#### CUDA Rendered @ 100 Precision 
-![alt text](https://raw.githubusercontent.com/Alien002/Ray_Tracer_Project/master/Assets/CUDA_100_Image.png "CUDA_100_Image.png")
+#### CUDA Rendered @ 100 Precision (1440 x 900 px)
+![alt text](https://raw.githubusercontent.com/Alien002/Ray_Tracer_Project/master/Assets/CUDA_100_Image.png "CUDA_100_Image.png")<br />
+*Rendered image is not grainy and much higher quality.*
