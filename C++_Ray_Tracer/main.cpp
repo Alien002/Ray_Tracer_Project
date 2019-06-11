@@ -78,12 +78,12 @@ hitable *random_scene_gen() {
 
 int main(){
     clock_t begin = clock();
-    string filename = "CPP_Image.ppm";
+    string filename = "CPP_100_Image.ppm";
     ofstream outfs (filename);
     if(outfs.is_open()){
         int pixel_x = 1440;      //Pixels on X
         int pixel_y = 900;       //Pixels on Y
-        int precision = 50;      //Increase value to achieve higher precision
+        int precision = 100;      //Increase value to achieve higher precision
         
         cout <<"Rendering a " <<pixel_x <<" x " <<pixel_y <<" image with " <<precision <<" precision for samples per pixel." <<endl;
         
