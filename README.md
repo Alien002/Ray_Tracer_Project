@@ -30,7 +30,7 @@ Precision | CPU Runtime (sec.) | GPU Runtime (sec.)
 10 | 64.33 | 24.62
 
 
-## Sample Image:
+## Sample Images:
 
 #### CUDA Rendered @ 10 Precision (1440 x 900 px)
 ![alt text](https://raw.githubusercontent.com/Alien002/Ray_Tracer_Project/master/Assets/CUDA_10_Image.png "CUDA_10_Image.png")<br />
