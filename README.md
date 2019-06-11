@@ -1,5 +1,5 @@
 # Ray Tracer Project
-CUDA Accelerated Ray Tracer for CS147 GPU Final Project
+Ray Tracer for CS 147 GPU, Final Project. The purpose of the project is to compare the runtimes of ray tracing on CPU vs. GPU. The CPU code is written in C++, and the GPU code is written in NVIDIA CUDA. The ray tracer generates numerous spheres of varying materials and color based on a seed value. Some of the header files are based off of my previous ray tracer for CS 130 Computer Graphics. 
 
 ## Hardware Specifications:
 ### Device and CPU Specifications:
